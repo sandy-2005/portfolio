@@ -1,0 +1,172 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+body{
+  width: 100vw;
+  background: url(https://bostami.netlify.app/images/background.jpg);
+  min-height: 100vh;
+  max-height: fit-content;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whole{ 
+  width: 80%;
+  height: 100%;
+  /* background-color: aqua;   */
+}
+.header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: aqua; */
+}
+.header img{
+  width: 10%;
+}
+.subject{
+  /* height: 20px; */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Quicksand', sans-serif;  
+  /* background-color: #f95053;  */
+}
+.subject button{
+  width: 90px;
+  padding: 14px;
+  border-radius: 20px;
+  border-style: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  transition: 3s;
+}
+.subject a{
+  width: 110 px;
+  text-decoration: none;
+  color: black;
+}
+.subject h3{
+  width: 115px;
+  background-color: white;
+  padding: 10px;
+  transition: 0.25s;
+  /* text-decoration: overline; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}   
+.subject h3:hover{
+  background: linear-gradient(90deg,#f95053,#de2774 );
+}
+.moon button{
+  width: 50px;
+  transition: 1s;
+  border-radius: 100%;
+}
+.moon button:hover{
+  background: linear-gradient(90deg,#f95053,#de2774 );
+}
+.titleline {
+  display: inline-flex;
+  margin-bottom: 25px;
+}
+.line {
+  margin-top: 20px;
+  margin-left: 15px;
+  height: 2px;
+  width: 200px;
+  background-image: linear-gradient(90deg, #f95053, #de2774);
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.content {
+  height: 1400px;
+  width: 100%;
+  padding: 40px 80px;
+  background-color: rgb(251, 248, 248);
+  border-radius: 20px;
+}
+.content h1 {
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 40px;
+}
+nav:hover {
+  cursor: pointer;  
+  color:red;
+  
+}
+.cardbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  min-height: 50vh;
+}
+.cardbox1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards {
+  height: fit-content;
+  width: fit-content;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card1 {
+  background-color: #073d4b;
+}
+.card2 {
+  background-color: #791108;
+}
+.card3 {
+  background-color: #5cdaf3;
+}
+.card4 {
+  background-color: #ddf2f7;
+}
+.card5 {
+  background-color: #320f26;
+}
+.card6 {
+  background-color: #d347bc;
+}
+.card7 {
+  background-color: #3f1631;
+}
+.card8 {
+  background-color: #0496ba;
+}
+.card9 {
+  background-color: #57204e;
+}
+.cards  p {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.cards  img {
+  margin-bottom: 10px;
+}
+.cards  h3 {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}

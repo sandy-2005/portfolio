@@ -1,48 +1,46 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 body{
     width: 100vw;
     background: url(https://bostami.netlify.app/images/background.jpg);
-    height: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Quicksand', sans-serif;
 }
-.whole{
-    width: 85%;
-    height: 95%;
-    /* background-color: #f95053; */
+.whole{ 
+    width: 80%;
+    height: 100%;
+    /* background-color: aqua;   */
 }
 .header{
     width: 100%;
-    height: 20%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    /* background-color: #f95053; */
+    /* background-color: aqua; */
 }
 .header img{
     width: 10%;
 }
 .subject{
+    /* height: 20px; */
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Quicksand', sans-serif;   
-}
-.subject a{
-    width:  100px;
-    text-decoration: none;
-    color: black;
+    font-family: 'Quicksand', sans-serif;  
+    /* background-color: #f95053;  */
 }
 .subject button{
-    width: 110px;
+    width: 90px;
     padding: 14px;
     border-radius: 20px;
     border-style: none;
@@ -50,29 +48,188 @@ body{
     font-family: 'Roboto', sans-serif;
     transition: 3s;
 }
-.subject h3{
-    background-color: aliceblue;
-    padding: 10px;
-    transition: 1s;
-    border-radius: 10px;
+.subject a{
+    width: 110 px;
+    text-decoration: none;
+    color: black;
 }
+.subject h3{
+    width: 115px;
+    background-color: white;
+    padding: 10px;
+    transition: 0.25s;
+    /* text-decoration: overline; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}   
 .subject h3:hover{
-    background-color: #de2774;
+    background: linear-gradient(90deg,#f95053,#de2774 );
 }
 .moon button{
-     width: 50px;
-    padding: 14px;
+    width: 50px;
+    transition: 1s;
     border-radius: 100%;
-    border-style: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    transition: 3s;
 }
 .moon button:hover{
     background: linear-gradient(90deg,#f95053,#de2774 );
 }
 .content{
     background-color: aliceblue;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
 }
+.heading {
+    /* background-color: darkblue; */
+    margin-left: 20px;
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.heading p{
+    width: 190px;
+    height: 3px;
+    background-color: #de2774
+}
+.content {
+    padding: 40px 80px;
+    background-color: rgb(251, 248, 248);
+  }
+  .titleline {
+    display: inline-flex;
+    margin-bottom: 25px;
+  }
+  .line {
+    margin-top: 30px;
+    margin-left: 15px;
+    height: 2px;
+    width: 200px;
+    background-image: linear-gradient(90deg, #f95053, #de2774);
+  }
+  .box1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .categorytitle {
+    display: flex;
+    align-content: center;
+  }
+  .categorytitle > i {
+    color: #f95053;
+  }
+  .categorytitle > h2 {
+    margin-left: 15px;
+  }
+  .cards {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .cards1 {
+    background-color: bisque;
+  }
+  .cards2 {
+    background-color: bisque
+  }
+  .cards3 {
+    background-color: bisque
+  }
+  .cards4 {
+    background-color: bisque
+  }
+  .cards5 {
+    background-color: bisque
+  }
+  .cards6 {
+    background-color: bisque
+  }
+  .cards7 {
+    background-color: bisque
+  }
+  .cards8 {
+    background-color: bisque
+  }
+  .cards9 {
+    background-color: bisque
+  }
+  .cards > p {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+  }
+  .cards > h3,
+  h4 {
+    margin-bottom: 5px;
+  }
+  .box2 {
+    height: 400px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills {
+    width: 90%;
+    padding: 10px;
+  }
+  .percent_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .bar {
+    height: 6px;
+    width: 100%;
+    background-color: #eaeaea;
+    margin: 15px 0px;
+    border-radius: 5px;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .percent {
+    height: 6px;
+    width: 80%;
+    background-color: rgb(235, 148, 61);
+    border-radius: 10px;
+  }
+  .percent1 {
+    background-color: rgb(234, 152, 71);
+    width: 86%;
+  }
+  .percent2 {
+    background-color: rgb(108, 209, 211);
+    width: 91%;
+  }
+  .percent3 {
+    background-color: rgb(196, 91, 190);
+    width: 66%;
+  }
+  .percent4 {
+    background-color: rgb(105, 80, 159);
+    width: 70%;
+  }
+  .cardbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Knowledgecards {
+    height: fit-content;
+    width: fit-content;
+    background-color: #eaeaea;
+    padding: 10px;
+    margin: 15px 15px 15px 0px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+  }
